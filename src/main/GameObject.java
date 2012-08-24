@@ -59,6 +59,10 @@ public class GameObject
 		// This is the place where any references to an object should be made NULL or removed. 
 		owner.removeGameObject(this);
 	}
+	public void update(double delta)
+	{
+		// do something
+	}
 	public void draw(Graphics g)
 	{
 		// Draw the currentSprite at the current position

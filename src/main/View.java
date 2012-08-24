@@ -29,7 +29,7 @@ public class View extends JFrame
 	}
 	public void update(double delta)
 	{
-		scene.repaint();
+		scene.update(delta);
 	}
 	public void setScene(Scene scene)
 	{

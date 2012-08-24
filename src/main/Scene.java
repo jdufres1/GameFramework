@@ -17,6 +17,14 @@ public class Scene extends JPanel
 		this.owner = owner;
 		setSize(owner.getContentPane().getWidth(), owner.getContentPane().getHeight());
 	}
+	public void update(double delta)
+	{
+		for (GameObject object : objects)
+		{
+			object.update(delta);
+		}
+		repaint();
+	}
 	public void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
